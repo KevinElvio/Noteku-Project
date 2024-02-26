@@ -5,19 +5,24 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Scaffold(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
           backgroundColor: color1,
-          body: Center(
-            child:         
-            Text(
-              "NOTEKU",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20),
-            ),
-          ),
-        ));
+          body: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children:[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                    margin: EdgeInsetsDirectional.only(start: 23),
+                    width: 120,
+                    height: 114.07,
+                    child: Image.asset('lib/img/LOGO.png')),
+                    Text("NOTEKU",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),)
+              ],
+            )
+          ])),
+    );
   }
 }
