@@ -19,7 +19,7 @@ class Login extends StatelessWidget {
           children: [
             Center(
               child: Container(
-                margin: const EdgeInsets.only(top: 60),
+                margin: const EdgeInsets.only(top: 10),
                 child: Column(
                   children: [
                     Text(

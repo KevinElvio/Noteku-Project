@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noteku_project/pages/forget_pass.dart';
+import 'package:noteku_project/pages/register.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ForgetPass(),
+      home: Register(),
     );
   }
 }

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ForgetPass extends StatelessWidget {
+class Register extends StatelessWidget {
   final Color color1 = const Color.fromRGBO(39, 40, 41, 1);
   final Color color2 = const Color.fromRGBO(216, 217, 218, 1);
   final Color color3 = const Color.fromRGBO(116, 155, 255, 1);
 
-  const ForgetPass({super.key});
+  const Register({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +23,7 @@ class ForgetPass extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      "Forget Password",
+                      "Register",
                       style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
@@ -33,6 +33,27 @@ class ForgetPass extends StatelessWidget {
                     Container(
                       alignment: Alignment.topLeft,
                       margin: const EdgeInsets.only(top: 59, left: 59),
+                      child: Text(
+                        "Username",
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: "poppins",
+                            color: color2),
+                      ),
+                    ),
+                    Container(
+                      width: 278,
+                      height: 38,
+                      margin: const EdgeInsets.only(top: 10),
+                      child: TextFormField(
+                        decoration:
+                            InputDecoration(fillColor: color2, filled: true),
+                      ),
+                    ),
+                    Container(
+                      alignment: Alignment.topLeft,
+                      margin: const EdgeInsets.only(top: 17, left: 59),
                       child: Text(
                         "Email",
                         style: TextStyle(
@@ -100,7 +121,7 @@ class ForgetPass extends StatelessWidget {
                       child: ElevatedButton(
                         onPressed: () {},
                         child: Text(
-                          "Reset Password",
+                          "Register",
                           style: TextStyle(
                               fontFamily: "poppins",
                               fontWeight: FontWeight.w500,
@@ -109,6 +130,31 @@ class ForgetPass extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Container(
+                      margin: const EdgeInsets.only(top: 50),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Already have an account",
+                            style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w400,
+                                color: Colors.white),
+                          ),
+                          SizedBox(
+                            
+                          ),
+                          Text(
+                            "Login",
+                            style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w500,
+                                color: color3),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),
