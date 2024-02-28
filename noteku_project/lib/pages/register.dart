@@ -142,8 +142,9 @@ class Register extends StatelessWidget {
                                 fontWeight: FontWeight.w400,
                                 color: Colors.white),
                           ),
-                          SizedBox(
-                            
+                          const SizedBox(
+                            width: 7,
+                            height: 1,
                           ),
                           Text(
                             "Login",
