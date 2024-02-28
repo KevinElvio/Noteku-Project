@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
-  final Color color1 = Color.fromRGBO(39, 40, 41, 1);
+  final Color color1 = const Color.fromRGBO(39, 40, 41, 1);
+
+  const SplashScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,11 +17,11 @@ class SplashScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                    margin: EdgeInsetsDirectional.only(start: 23),
+                    margin: const EdgeInsetsDirectional.only(start: 23),
                     width: 120,
                     height: 114.07,
                     child: Image.asset('lib/asets/img/LOGO.png')),
-                    Text("NOTEKU",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),)
+                    const Text("NOTEKU",style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),)
               ],
             )
           ])),

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Login extends StatelessWidget {
+class ForgetPass extends StatelessWidget {
   final Color color1 = const Color.fromRGBO(39, 40, 41, 1);
   final Color color2 = const Color.fromRGBO(216, 217, 218, 1);
   final Color color3 = const Color.fromRGBO(116, 155, 255, 1);
 
-  const Login({super.key});
+  const ForgetPass({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +23,7 @@ class Login extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      "Login",
+                      "Forget Password",
                       style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.bold,
@@ -73,79 +73,34 @@ class Login extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      alignment: Alignment.centerRight,
-                      margin: const EdgeInsets.only(right: 57, top: 11),
+                      alignment: Alignment.topLeft,
+                      margin: const EdgeInsets.only(top: 17, left: 59),
                       child: Text(
-                        "Forget Password?",
+                        "Confirm Password",
                         style: TextStyle(
-                            fontSize: 12,
+                            fontSize: 15,
                             fontWeight: FontWeight.w500,
                             fontFamily: "poppins",
                             color: color2),
                       ),
                     ),
-                    Row(
-                      children: [
-                        Container(
-                          alignment: Alignment.centerLeft,
-                          margin: const EdgeInsets.only(top: 29, left: 59),
-                          child: SizedBox(
-                            width: 111,
-                            height: 2,
-                            child: Container(
-                              color: color2,
-                            ),
-                          ),
-                        ),
-                        Container(
-                            margin:
-                                const EdgeInsets.only(top: 27, left: 17, right: 17),
-                            child: const Text(
-                              "Or",
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  fontFamily: "poppins",
-                                  color: Colors.white),
-                            )),
-                        Container(
-                          alignment: Alignment.centerLeft,
-                          margin: const EdgeInsets.only(top: 29, right: 59),
-                          child: SizedBox(
-                            width: 111,
-                            height: 2,
-                            child: Container(
-                              color: color2,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
                     Container(
-                      margin: const EdgeInsets.only(top: 9),
-                      child: Text(
-                        "SignUp With",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            fontFamily: "poppins",
-                            fontSize: 11,
-                            color: color2),
+                      width: 278,
+                      height: 38,
+                      margin: const EdgeInsets.only(top: 10),
+                      child: TextFormField(
+                        decoration:
+                            InputDecoration(fillColor: color2, filled: true),
                       ),
                     ),
                     Container(
-                      width: 23,
-                      height: 23,
-                      margin: const EdgeInsets.only(top: 14),
-                      child: Image.asset("lib/asets/img/icon-google.png"),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 36),
+                      margin: const EdgeInsets.only(top: 66),
                       width: 278,
                       height: 51,
                       child: ElevatedButton(
                         onPressed: () {},
                         child: Text(
-                          "Login",
+                          "Reset Password",
                           style: TextStyle(
                               fontFamily: "poppins",
                               fontWeight: FontWeight.w500,
@@ -154,28 +109,6 @@ class Login extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
-                      margin: const EdgeInsets.only(top: 5),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          const Text(
-                            "Does not have an account?",
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w400,
-                                color: Colors.white),
-                          ),
-                          Text(
-                            "Create account",
-                            style: TextStyle(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w500,
-                                color: color3),
-                          )
-                        ],
-                      ),
-                    )
                   ],
                 ),
               ),
