@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:noteku_project/pages/splash_screen.dart';
+import 'package:noteku_project/pages/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: Login(),
     );
   }
 }
